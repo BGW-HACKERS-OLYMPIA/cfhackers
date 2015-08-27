@@ -1,1 +1,2 @@
 include "springboottrades-accounts", "springboottrades-quotes", "springboottrades-web", "springboottrades-portfolio", "registryServer"
+rootProject.dependsOn(":A")
