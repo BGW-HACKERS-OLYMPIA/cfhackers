@@ -192,11 +192,11 @@ cloudfoundry {
 	space = "development"
 	username = System.getenv()['CF_USERNAME']
 	password = System.getenv()['CF_PASSWD']
-	file = file("target/springboottrades-web.jar")
-	file = file("target/springboottrades-portfolio.jar")
-	file = file("target/springboottrades-quotes.jar")
-	file = file("target/springboottrades-accounts.jar")
-	file = file("target/registryServer.jar")
+	file = file("target/web.jar")
+	file = file("target/portfolio.jar")
+	file = file("target/quotes.jar")
+	file = file("target/accounts.jar")
+	file = file("target/registry.jar")
 	host = "office"
 	domain = "cfapps.io"
 	memory = 512
