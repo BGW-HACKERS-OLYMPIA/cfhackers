@@ -30,11 +30,11 @@ buildscript {
 allprojects {
 	apply from: "$rootDir/gradle/versioning.gradle"
 	dependencies {
-		testCompile subprojects
+		testCompile test
 	}
 }
 
-subprojects {
+project (":test") {
     apply plugin: 'java'
     apply plugin: 'eclipse'
 	apply plugin: 'jacoco'
