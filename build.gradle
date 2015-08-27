@@ -154,7 +154,7 @@ project(':springboottrades-web') {
 
 		runtime "org.webjars:bootstrap:${bootstrapVersion}"
 
-		testCompile "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
+		testCompile "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"		
     }
 }
 
