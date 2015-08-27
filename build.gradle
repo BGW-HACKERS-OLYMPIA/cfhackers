@@ -31,7 +31,7 @@ allprojects {
 	apply from: "$rootDir/gradle/versioning.gradle"
 }
 
-subprojects {
+subprojects A{
     apply plugin: 'java'
     apply plugin: 'eclipse'
 	apply plugin: 'jacoco'
