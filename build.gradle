@@ -193,7 +193,7 @@ cloudfoundry {
 	username = System.getenv()['CF_USERNAME']
 	password = System.getenv()['CF_PASSWD']
 	//file = file("target/web.jar")
-	/file = file("target/portfolio.jar")
+	//file = file("target/portfolio.jar")
 	//file = file("target/quotes.jar")
 	file = file("accounts.jar")
 	//file = file("target/registry.jar")
