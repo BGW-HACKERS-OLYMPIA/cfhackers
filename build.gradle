@@ -201,6 +201,15 @@ cloudfoundry {
 	domain = "cfapps.io"
 	memory = 512
 	instances = 1
+		services {
+			'traderdb' {
+				label = 'mongodb'
+				provider = 'ClearDB MySQL Database'
+				version = 'n/a'
+				plan = 'sandbox'
+				bind = true
+			}
+		}
 	
 	variants = ['-blue', '-green']
 }
