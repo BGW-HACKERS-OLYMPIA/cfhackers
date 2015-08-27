@@ -182,3 +182,24 @@ project (':registryServer') {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
+
+apply plugin: 'cloudfoundry'
+
+cloudfoundry {
+	target = "https://api.run.pivotal.io"
+	organization = "cfhack"
+	space = "development"
+	username = System.getenv()['CF_USERNAME']
+	password = System.getenv()['CF_PASSWD']
+	file = file("target/springboottrades-web.jar")
+	file = file("target/springboottrades-portfolio.jar")
+	file = file("target/springboottrades-quotes.jar")
+	file = file("target/springboottrades-accounts.jar")
+	file = file("target/registryServer.jar")
+	host = "vdsi-cab-pooling"
+	domain = "cfapps.io"
+	memory = 512
+	instances = 1
+	
+	variants = ['-blue', '-green']
+}
