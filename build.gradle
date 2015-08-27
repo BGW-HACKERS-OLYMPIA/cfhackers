@@ -195,7 +195,7 @@ cloudfoundry {
 	//file = file("target/web.jar")
 	//file = file("target/portfolio.jar")
 	//file = file("target/quotes.jar")
-	file = file("springboottrades-accounts/accounts.jar")
+	file = file("springboottrades-accounts/build/libs/accounts-0.2.jar")
 	//file = file("target/registry.jar")
 	host = "office"
 	domain = "cfapps.io"
