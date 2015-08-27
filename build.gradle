@@ -203,7 +203,7 @@ cloudfoundry {
 	instances = 1
 		services {
 			'traderdb' {
-				label = 'mongodb'
+				label = 'MySqlDB'
 				provider = 'ClearDB MySQL Database'
 				version = 'n/a'
 				plan = 'sandbox'
