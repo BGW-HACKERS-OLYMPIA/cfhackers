@@ -198,7 +198,7 @@ cloudfoundry {
 	//file = file("springboottrades-accounts/build/libs/accounts-0.2.jar")
 	//file = file("springboottrades-web/build/libs/web-0.2.jar")
 	//file = file("registryServer/build/libs/registry-0.2.jar")
-	host = "web"
+	host = "portolio"
 	domain = "cfapps.io"
 	memory = 512
 	instances = 1
@@ -212,5 +212,47 @@ cloudfoundry {
 			}
 		}
 	
+		services {
+			'eureka-service' {
+				label = 'MySqlDB'
+				provider = 'User Provided'
+				version = 'n/a'
+				bind = true
+			}
+		}
+	variants = ['-blue', '-green']
+}
+
+cloudfoundry {
+	target = "https://api.run.pivotal.io"
+	organization = "cfhack"
+	space = "development"
+	username = System.getenv()['CF_USERNAME']
+	password = System.getenv()['CF_PASSWD']
+	file = file("springboottrades-accounts/build/libs/accounts-0.2.jar")
+	//file = file("springboottrades-web/build/libs/web-0.2.jar")
+	//file = file("registryServer/build/libs/registry-0.2.jar")
+	host = "accounts"
+	domain = "cfapps.io"
+	memory = 512
+	instances = 1
+		services {
+			'traderdb' {
+				label = 'MySqlDB'
+				provider = 'ClearDB MySQL Database'
+				version = 'n/a'
+				plan = 'sandbox'
+				bind = true
+			}
+		}
+	
+		services {
+			'eureka-service' {
+				label = 'MySqlDB'
+				provider = 'User Provided'
+				version = 'n/a'
+				bind = true
+			}
+		}
 	variants = ['-blue', '-green']
 }
