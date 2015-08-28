@@ -220,7 +220,7 @@ cloudfoundry {
 				bind = true
 			}
 		}
-	variants = ['-blue', '-green']
+	//variants = ['-blue', '-green']
 }
 
 cloudfoundry {
@@ -254,5 +254,5 @@ cloudfoundry {
 				bind = true
 			}
 		}
-	variants = ['-blue', '-green']
+	//variants = ['-blue', '-green']
 }
