@@ -198,7 +198,7 @@ cloudfoundry {
 	//file = file("springboottrades-accounts/build/libs/accounts-0.2.jar")
 	//file = file("springboottrades-web/build/libs/web-0.2.jar")
 	//file = file("registryServer/build/libs/registry-0.2.jar")
-	host = "office"
+	host = "web"
 	domain = "cfapps.io"
 	memory = 512
 	instances = 1
