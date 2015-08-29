@@ -194,6 +194,7 @@ cloudfoundry {
 	host = "eureka-server"
 	domain = "cfapps.io"
 	memory = 512
+	//uri = "http://app-name-${randomWord}.run.pivotal.io"
 	instances = 1
 		services {
 			'sql-adapter' {
