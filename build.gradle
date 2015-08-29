@@ -191,7 +191,7 @@ cloudfoundry {
 	password = System.getenv()['CF_PASSWD']
 	application = "accounts"
 	file = file("accounts-microservice/build/libs/accounts-0.2.jar")
-	host = "accounts"
+	host = "eureka-server"
 	domain = "cfapps.io"
 	memory = 512
 	instances = 1
