@@ -195,7 +195,6 @@ cloudfoundry {
 	domain = "cfapps.io"
 	memory = 512
 	instances = 1
-	random-route = true
 		services {
 			'sql-adapter' {
 				label = 'MySqlDB'
