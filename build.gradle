@@ -63,7 +63,7 @@ subprojects {
 	}
 }
 
-project(':accoutns-microservice') {
+project(':accounts-microservice') {
 	apply plugin: 'spring-boot'
     jar {
         baseName = 'accounts'
