@@ -29,6 +29,7 @@ buildscript {
 // Apply versioning to all projects from versioning script.
 allprojects {
 	apply from: "$rootDir/gradle/versioning.gradle"
+	task hello << {task -> println "I'm $task.project.name" }
 }
 
 subprojects {
@@ -36,7 +37,7 @@ subprojects {
     apply plugin: 'eclipse'
 	apply plugin: 'jacoco'
 
-
+	hello << {println "- here we go for subtask"}
 	jacoco {
 		toolVersion = "0.7.1.201405082137"
 	//	reportsDir = file("$buildDir/customJacocoReportDir")
@@ -55,11 +56,7 @@ subprojects {
         mavenCentral()
     }
 	dependencies {
-
-		//test packages
-		
 		testCompile "junit:junit:$junitVersion"
-
 	}
 }
 
@@ -192,11 +189,30 @@ cloudfoundry {
 	space = "cloud-foundry-hacker"
 	username = System.getenv()['CF_USERNAME']
 	password = System.getenv()['CF_PASSWD']
-	application = "eureka-server"
-	file = file("registryServer/build/libs/registry-0.2.jar")
-	host = "eureka-server"
+	application = "accounts"
+	file = file("accounts-microservice/build/libs/accounts-0.2.jar")
+	host = "accounts"
 	domain = "cfapps.io"
 	memory = 512
 	instances = 1
+		services {
+			'sql-adapter' {
+				label = 'MySqlDB'
+				provider = 'ClearDB MySQL Database'
+				version = 'n/a'
+				plan = 'sandbox'
+				bind = true
+			}
+		}
+	
+		services {
+			'eureka-service' {
+				label = 'MySqlDB'
+				provider = 'User Provided'
+				version = 'n/a'
+				plan = 'sandbox'
+				bind = true
+			}
+		}
 	variants = ['-blue', '-green']
 }
