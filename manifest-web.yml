@@ -8,5 +8,5 @@ env:
     JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
 applications:
 - name: webtrader
-  path: springboottrades-web/build/libs/web-0.2.jar
+  path: web-microservice/build/libs/web-0.2.jar
   services: [  eureka-service  ]
