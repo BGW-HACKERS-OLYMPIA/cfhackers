@@ -142,16 +142,25 @@ cloudfoundry {
 	space = "cloud-foundry-hacker"
 	username = System.getenv()['CF_USERNAME']
 	password = System.getenv()['CF_PASSWD']
-	application = "vz-portal"
-	file = file("web-microservice/build/libs/web-0.2.jar")
+	application = "accounts"
+	file = file("accounts-microservice/build/libs/accounts-0.2.jar")	
 	host = "eureka-server"
 	domain = "cfapps.io"
 	memory = 512
-	uri = "http://app-name-${randomWord}.run.pivotal.io"
 	instances = 1
-			services {
+		services {
+			'sql-adapter' {
+				label = 'MySqlDB'
+				provider = 'ClearDB MySQL Database'
+				version = 'n/a'
+				plan = 'sandbox'
+				bind = true
+			}
+		}
+	
+		services {
 			'eureka-service' {
-				label = 'eureka'
+				label = 'MySqlDB'
 				provider = 'User Provided'
 				version = 'n/a'
 				plan = 'sandbox'
