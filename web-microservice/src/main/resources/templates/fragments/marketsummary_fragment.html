@@ -2,11 +2,11 @@
 <th:block th:fragment="summary">
 	<div th:if="${marketSummary != null}" class="row show-table">
 		<div
-			th:include="fragments/marketsummary_fragment :: summary-quote(${marketSummary.topGainers},'IT VEndors')" th:remove="tag"></div>
+			th:include="fragments/marketsummary_fragment :: summary-quote(${marketSummary.topGainers},'Facility Management')" th:remove="tag"></div>
 		<div
 			th:include="fragments/marketsummary_fragment :: summary-central" th:remove="tag"></div>	
 		<div
-			th:include="fragments/marketsummary_fragment :: summary-quote(${marketSummary.topLosers},'FS Organisations')" th:remove="tag"></div>
+			th:include="fragments/marketsummary_fragment :: summary-quote(${marketSummary.topLosers},'Inventory Management')" th:remove="tag"></div>
 	</div>
 </th:block>
 	
@@ -45,10 +45,10 @@
 			</tr>
 			<tr>
 				<th>Symbol</th>
-				<th>Price</th>
+				<th>Name</th>
 				<th>Change</th>
-				<th>High</th>
-				<th>Low</th>
+				<th>Available</th>
+				<th></th>
 			</tr>
 			<tr th:class="${#numbers.formatDecimal(quote.change, 0, 'COMMA', 2, 'POINT')} &gt; 0? 'text-success caps' : 'text-error caps'" th:each="quote : ${quoteList}">
 				<td><strong th:text="${quote.symbol}"></strong></td>
