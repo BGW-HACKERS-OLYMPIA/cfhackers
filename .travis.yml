@@ -1,6 +1,6 @@
 language: java
 script: 
-  - gradle cfUndeploy
+  - gradle cfDeploy cfSwapDeployed cfUndeploy
 jdk:
   - oraclejdk8
 before_install:
