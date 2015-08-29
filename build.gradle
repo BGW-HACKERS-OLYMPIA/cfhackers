@@ -136,36 +136,18 @@ task wrapper(type: Wrapper) {
 
 apply plugin: 'cloudfoundry'
 
+
 cloudfoundry {
 	target = "https://api.run.pivotal.io"
 	organization = "cfhack"
 	space = "cloud-foundry-hacker"
 	username = System.getenv()['CF_USERNAME']
 	password = System.getenv()['CF_PASSWD']
-	application = "accounts"
-	file = file("accounts-microservice/build/libs/accounts-0.2.jar")
+	application = "eureka-server"
+	file = file("registryServer/build/libs/registry-0.2.jar")
 	host = "eureka-server"
 	domain = "cfapps.io"
 	memory = 512
 	instances = 1
-		services {
-			'sql-adapter' {
-				label = 'MySqlDB'
-				provider = 'ClearDB MySQL Database'
-				version = 'n/a'
-				plan = 'sandbox'
-				bind = true
-			}
-		}
-	
-		services {
-			'eureka-service' {
-				label = 'MySqlDB'
-				provider = 'User Provided'
-				version = 'n/a'
-				plan = 'sandbox'
-				bind = true
-			}
-		}
 	variants = ['-blue', '-green']
 }
