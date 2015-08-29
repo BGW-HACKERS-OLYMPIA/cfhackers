@@ -8,5 +8,5 @@ env:
     JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
 applications:
 - name: accounts
-  path: springboottrades-accounts/build/libs/accounts-0.2.jar
+  path: accounts-microservice/build/libs/accounts-0.2.jar
   services: [ traderdb, eureka-service ]

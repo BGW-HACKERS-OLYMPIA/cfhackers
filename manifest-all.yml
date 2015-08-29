@@ -12,7 +12,7 @@ applications:
 #  path: springboottrades-quotes/build/libs/quotes-0.2.jar
 #  services: [ eureka-service ]
 - name: accounts-${random-word}
-  path: springboottrades-accounts/build/libs/accounts-0.2.jar
+  path: accounts-microservice/build/libs/accounts-0.2.jar
   services: [ eureka-service, traderdb ]
 - name: portfolio-${random-word}
   path: springboottrades-portfolio/build/libs/portfolio-0.2.jar
