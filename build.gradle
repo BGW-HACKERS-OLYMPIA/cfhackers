@@ -84,53 +84,6 @@ project(':accounts-microservice') {
     }
 }
 
-project(':springboottrades-quotes') {
-	apply plugin: 'spring-boot'
-    jar {
-        baseName = 'quotes'
-    }
-	description = "Micro-service to retrieve up to date quotes"
-    dependencies {
-		compile "org.springframework.boot:spring-boot-starter:${springBootVersion}"
-		compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
-		compile "org.springframework:spring-web:${springVersion}"
-		compile "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
-    compile "org.springframework.cloud:spring-cloud-starter-eureka:${springEurekaVersion}"
-
-		//runtime
-
-
-		//test packages
-		testCompile "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
-		testRuntime "com.jayway.jsonpath:json-path"
-    }
-}
-
-project(':springboottrades-portfolio') {
-	apply plugin: 'spring-boot'
-    jar {
-        baseName = 'portfolio'
-    }
-	description = "Micro-service to manage portfolios"
-    dependencies {
-		//compile project(":springboottrades-common")
-		compile "org.springframework.boot:spring-boot-starter:${springBootVersion}"
-		compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
-		compile "org.springframework.boot:spring-boot-starter-data-jpa:$springBootVersion"
-		//compile "org.springframework.boot:spring-boot-starter-cloud-connectors:${springBootVersion}"
-    compile "org.springframework.cloud:spring-cloud-starter-eureka:${springEurekaVersion}"
-
-		//runtime
-		//runtime "mysql:mysql-connector-java:${mysqlVersion}"
-		runtime "org.hsqldb:hsqldb"
-
-		//test packages
-		testCompile "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
-    testRuntime "com.jayway.jsonpath:json-path:2.0.0"
-		testRuntime "org.hsqldb:hsqldb"
-    }
-}
-
 project(':web-microservice') {
 	apply plugin: 'spring-boot'
 

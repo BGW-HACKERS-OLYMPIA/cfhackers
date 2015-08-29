@@ -1,1 +1,1 @@
-include "accounts-microservice", "springboottrades-quotes", "web-microservice", "springboottrades-portfolio", "registryServer"
+include "accounts-microservice", "web-microservice", "registryServer"
