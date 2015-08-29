@@ -186,8 +186,6 @@ task wrapper(type: Wrapper) {
 
 apply plugin: 'cloudfoundry'
 
-
-
 cloudfoundry {
 	target = "https://api.run.pivotal.io"
 	organization = "cfhack"
@@ -201,7 +199,7 @@ cloudfoundry {
 	file = file("accounts-microservice/build/libs/accounts-0.2.jar")
 	//file = file("web-microservice/build/libs/web-0.2.jar")
 	//file = file("registryServer/build/libs/registry-0.2.jar")
-	host = "web"
+	host = "accounts"
 	domain = "cfapps.io"
 	memory = 512
 	instances = 1
