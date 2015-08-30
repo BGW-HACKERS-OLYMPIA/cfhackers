@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
  * <li>POST <code>/login</code> login request.
  * <li>GET <code>/logout/{userId}</code> logs out the account with given user id.
  * </ul><p>
- * @author David Ferreira Pinto
+ * Verizon Portal Service
  *
  */
 @RestController

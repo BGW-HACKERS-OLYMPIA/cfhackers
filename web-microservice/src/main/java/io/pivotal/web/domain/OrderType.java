@@ -3,7 +3,7 @@ package io.pivotal.web.domain;
 /**
  * The type of the order. It can be a BUY order or a SELL order.
  * 
- * @author David Ferreira Pinto
+ * Verizon Portal Service
  *
  */
 public enum OrderType {

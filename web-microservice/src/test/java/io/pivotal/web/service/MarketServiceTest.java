@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * Tests the QuoteService.
- * @author David Ferreira Pinto
+ * Verizon Portal Service
  *
  */
 public class MarketServiceTest {

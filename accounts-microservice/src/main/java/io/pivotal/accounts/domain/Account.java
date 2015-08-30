@@ -20,7 +20,7 @@ import org.springframework.format.annotation.DateTimeFormat;
  * 
  * Entity object that represents a user account.
  * 
- * @author David Ferreira Pinto
+ * Verizon Portal Service
  *
  */
 @Entity

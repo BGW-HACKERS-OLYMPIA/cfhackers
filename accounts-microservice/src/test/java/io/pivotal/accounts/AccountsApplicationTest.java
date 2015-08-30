@@ -8,7 +8,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 /**
  * Tests for the Accounts Application.
- * @author David Ferreira Pinto
+ * Verizon Portal Service
  *
  */
 @RunWith(SpringJUnit4ClassRunner.class)

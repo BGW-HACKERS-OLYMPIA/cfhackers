@@ -20,7 +20,7 @@ package io.pivotal.accounts.domain;
  *  
  *  Used to make login requests.
  *  
- *  @author David Ferreira Pinto
+ *  Verizon Portal Service
  */
 public class AuthenticationRequest {
 	private String username;

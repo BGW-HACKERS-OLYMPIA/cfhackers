@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.ObjectMapper;
 /**
  * Tests for the AccountsController.
- * @author David Ferreira Pinto
+ * Verizon Portal Service
  *
  */
 public class AccountsControllerTest {

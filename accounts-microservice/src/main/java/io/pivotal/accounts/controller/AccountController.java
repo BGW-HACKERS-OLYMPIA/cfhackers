@@ -27,7 +27,7 @@ import org.springframework.web.util.UriComponentsBuilder;
  * <li>GET <code>/accounts/{id}/increaseBalance/{amount}</code> increases the balance of the account with given id by amount.
  * <li>GET <code>/accounts/{id}/decreaseBalance/{amount}</code> decreases the balance of the account with given id by amount.
  * </ul><p>
- * @author David Ferreira Pinto
+ * Verizon Portal Service
  * @author Maxim Avezbakiev
  *
  */

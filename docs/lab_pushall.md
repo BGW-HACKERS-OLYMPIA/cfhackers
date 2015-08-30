@@ -58,6 +58,6 @@ Congratulations! You have now deployed a set of microservices to the cloud that 
 
 Feel free to familiarise yourself with the UI of the application. You can access the application in a browser on the URL provided at the end of the push command and see something similar to the image below.
 
-![Spring Trader](/docs/springtrader.png)
+![Verizon Portal Service](/docs/springtrader.png)
 
 Now you can go to [next lab](lab_scale.md)

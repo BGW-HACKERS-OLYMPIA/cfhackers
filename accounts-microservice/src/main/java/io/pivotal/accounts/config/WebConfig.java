@@ -34,7 +34,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  * Controllers.
  * 
  * 
- * @author David Ferreira Pinto
+ * Verizon Portal Service
  */
 
 @Configuration

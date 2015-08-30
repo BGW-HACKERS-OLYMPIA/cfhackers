@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
 /**
  * The service in the accounts microservice.
  * 
- * @author David Ferreira Pinto
+ * Verizon Portal Service
  *
  */
 @Service

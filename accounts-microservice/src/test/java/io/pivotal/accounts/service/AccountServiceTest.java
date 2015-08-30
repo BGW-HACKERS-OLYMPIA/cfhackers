@@ -24,7 +24,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 /**
  * Tests for the AccountService.
  * 
- * @author David Ferreira Pinto
+ * Verizon Portal Service
  *
  */
 public class AccountServiceTest {

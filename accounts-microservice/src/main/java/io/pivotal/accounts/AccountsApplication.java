@@ -9,7 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * Spring Boot application to provide a service to manage user accounts. 
  * The application registers with a registry service - Eureka.
  * 
- * @author David Ferreira Pinto
+ * Verizon Portal Service
  *
  */
 @SpringBootApplication
