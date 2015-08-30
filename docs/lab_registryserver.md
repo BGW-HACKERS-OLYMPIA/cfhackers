@@ -36,7 +36,7 @@ The registry service allows us to have a dynamic registration and discovery of s
 
 An alternative is to use [Spring Cloud Connectors](http://cloud.spring.io/spring-cloud-connectors/) with [user-provided or managed services](http://docs.pivotal.io/pivotalcf/devguide/services/).
 
-This repository has a [branch](https://github.com/dpinto-pivotal/cf-SpringBootTrader/tree/v0.1-CUPS-based) with a version of the application that utilises user-provided services to discover each other.
+This repository has a [branch](https://github.com/dpinto-pivotal/cf-SpringBootOffice/tree/v0.1-CUPS-based) with a version of the application that utilises user-provided services to discover each other.
 
 # Summary
 

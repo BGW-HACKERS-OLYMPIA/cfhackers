@@ -38,9 +38,9 @@ You can obtain the CLI for multiple OS [here](https://github.com/cloudfoundry/cl
 
 Clone the GIT repository to your local machine. On the command line issue the following command:
 
-```git clone https://github.com/dpinto-pivotal/cf-SpringBootTrader.git```
+```git clone https://github.com/dpinto-pivotal/cf-SpringBootOffice.git```
 
-This command will copy the code in the repository to your local machine, creating a directory named `cf-SpringBootTrader`. All actions will now be done inside this directory.
+This command will copy the code in the repository to your local machine, creating a directory named `cf-SpringBootOffice`. All actions will now be done inside this directory.
 
 Once you have cloned the repository, it is important to build it to create the application artifacts.
 
@@ -67,7 +67,7 @@ At the end of this lab, you should have an environment setup to enable you to de
 In order to check that all is setup correctly, you should have something similar to the following:
 
 ```
-Penguin:cf-SpringBootTrader dpinto$ cf target
+Penguin:cf-SpringBootOffice dpinto$ cf target
 
 API endpoint:   https://CF-URI (API version: 2.23.0)
 User:           dpinto

@@ -11,12 +11,3 @@ applications:
 #- name: quotes
 #  path: springboottrades-quotes/build/libs/quotes-0.2.jar
 #  services: [ eureka-service ]
-- name: accounts-${random-word}
-  path: accounts-microservice/build/libs/accounts-0.2.jar
-  services: [ eureka-service, traderdb ]
-- name: portfolio-${random-word}
-  path: springboottrades-portfolio/build/libs/portfolio-0.2.jar
-  services: [ eureka-service, traderdb ]
-- name: webtrader-${random-word}
-  path: web-microservice/build/libs/web-0.2.jar
-  services: [ eureka-service ]
