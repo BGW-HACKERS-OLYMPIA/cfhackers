@@ -574,7 +574,7 @@ span.border-bg {
     background-image: linear-gradient(top, #86d227, #5eb01b);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#86d227', endColorstr='#5eb01b', GradientType=0);
-    border-color: #339900 #339900 #339900;
+    border-color: #ff0000 ##ff0000 ##ff0000;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     filter: progid:dximagetransform.microsoft.gradient(enabled=false);
     color:#ffffff;

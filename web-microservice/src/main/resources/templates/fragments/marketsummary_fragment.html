@@ -14,20 +14,11 @@
     <div class="span4 center-table">
         <table class="table">
             <tr>
-                <th colspan="2"><div class="logo-table" title="NanoTrader"/></th>
-            </tr>
+                <th colspan="2"><div class="logo-table" title="Verizon Office Portal"/></th>
+            </tr>            
             <tr>
-                <td>Index:</td>
-                <td id="ms-index" th:text="${marketSummary.tradeStockIndexAverage}"></td>
-            </tr>
-            <tr>
-                <td>Volume:</td>
-                <td id="ms-volume" th:text="${marketSummary.tradeStockIndexVolume}"></td>
-            </tr>
-            <tr>
-                <td>Change:</td>
-                <td>
-                    <span id="ms-change" th:text="${marketSummary.change}"></span><span id="ms-change-arrow"></span>
+                <td rowspan="2">
+                    <span id="ms-change" th:text="${marketSummary.change}"></span>Verizon Office Portal<span id="ms-change-arrow"></span>
                 </td>
             </tr>
         </table>
