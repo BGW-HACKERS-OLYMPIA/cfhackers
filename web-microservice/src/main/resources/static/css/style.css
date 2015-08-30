@@ -566,14 +566,14 @@ span.border-bg {
 }
 .btn.green-btn{ 
     background-color: #ff0000;
-    background-image: -moz-linear-gradient(top, #86d227, #5eb01b);
-    background-image: -ms-linear-gradient(top, #86d227, #5eb01b);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#86d227), to(#5eb01b));
-    background-image: -webkit-linear-gradient(top, #86d227, #5eb01b);
-    background-image: -o-linear-gradient(top, #86d227, #5eb01b);
-    background-image: linear-gradient(top, #86d227, #5eb01b);
+    background-image: -moz-linear-gradient(top, #ff0000, #ff0000);
+    background-image: -ms-linear-gradient(top, #ff0000, #ff0000);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff0000), to(#ff0000));
+    background-image: -webkit-linear-gradient(top, #ff0000, #ff0000);
+    background-image: -o-linear-gradient(top, #ff0000, #ff0000);
+    background-image: linear-gradient(top, #ff0000, #ff0000);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#86d227', endColorstr='#5eb01b', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#ff0000', GradientType=0);
     border-color: #ff0000 #ff0000 #ff0000;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     filter: progid:dximagetransform.microsoft.gradient(enabled=false);
@@ -666,7 +666,7 @@ table td input[type="number"] {
 .logo-table{
     background:url(../images/logo.png) no-repeat;
     width: 184px;
-    height: 150px;
+    height: 130px;
     margin: auto;
 }
 
