@@ -6,7 +6,7 @@
 		<div
 			th:include="fragments/marketsummary_fragment :: summary-central" th:remove="tag"></div>	
 		<div
-			th:include="fragments/marketsummary_fragment :: summary-quote(${marketSummary.topLosers},'Inventory Management')" th:remove="tag"></div>
+			th:include="fragments/marketsummary_fragment :: summary-quote(${marketSummary.topLosers},'E-Cards Management')" th:remove="tag"></div>
 	</div>
 </th:block>
 	
@@ -16,11 +16,6 @@
             <tr>
                 <th colspan="2"><div class="logo-table" title="Verizon Office Portal"/></th>
             </tr>            
-            <tr>
-                <td rowspan="2">
-                    <span id="ms-change" th:text="${marketSummary.change}"></span>Verizon Office Portal<span id="ms-change-arrow"></span>
-                </td>
-            </tr>
         </table>
     </div>
     </th:block>
@@ -35,11 +30,9 @@
 					th:text="${title}"></strong></th>
 			</tr>
 			<tr>
-				<th>Symbol</th>
-				<th>Name</th>
-				<th>Change</th>
-				<th>Available</th>
-				<th></th>
+				<th>Service Name</th>
+				<th>Status</th>
+				<th>Clearing-On</th>
 			</tr>
 			<tr th:class="${#numbers.formatDecimal(quote.change, 0, 'COMMA', 2, 'POINT')} &gt; 0? 'text-success caps' : 'text-error caps'" th:each="quote : ${quoteList}">
 				<td><strong th:text="${quote.symbol}"></strong></td>
