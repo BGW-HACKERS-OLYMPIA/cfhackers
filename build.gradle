@@ -150,14 +150,6 @@ cloudfoundry {
 	memory = 512
 	uri = "http://vz-portal-${randomWord}.run.pivotal.io"
 	instances = 1
-		//	services {
-			//'eureka-service' {
-			//	label = 'eureka'
-			//	provider = 'User Provided'
-			//	version = 'n/a'
-			//	plan = 'sandbox'
-			//	bind = true
-		//	}
-		}
+			
 	variants = ['-blue', '-green']
 }
