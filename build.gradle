@@ -154,13 +154,14 @@ cloudfoundry {
 	
 	instances = 1
 	services {
-			'MySqldb' {
-				label = 'traderdb'
-				provider = 'User Provided'
+			'traderdb' {
+				label = 'MySqlDB'
+				provider = 'ClearDB MySQL Database'
 				version = 'n/a'
 				plan = 'sandbox'
 				bind = true
 			}
+
 		}
 
 			
