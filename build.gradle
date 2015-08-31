@@ -139,8 +139,8 @@ apply plugin: 'cloudfoundry'
 
 cloudfoundry {
 	target = "https://api.run.pivotal.io"
-	organization = "cfhack"
-	space = "cloud-foundry-hacker"
+	organization = "Bgwhackers"
+	space = "development"
 	username = System.getenv()['CF_USERNAME']
 	password = System.getenv()['CF_PASSWD']
 	application = "vz-portal"
