@@ -143,7 +143,7 @@ cloudfoundry {
 	space = "development"
 	username = System.getenv()['CF_USERNAME']
 	password = System.getenv()['CF_PASSWD']
-	application = "vz-portal2"
+	application = "vz-portal"
 	file = file("web-microservice/build/libs/web-0.2.jar")
 	host = "vz-portal"
 	domain = "cfapps.io"
