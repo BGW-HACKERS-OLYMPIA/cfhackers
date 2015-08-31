@@ -10,6 +10,7 @@ buildscript {
 		jacksonVersion = '2.5.3'
 		mysqlVersion = '5.1.35'
 		bootstrapVersion = '2.3.2'
+		
     }
 
     repositories {
